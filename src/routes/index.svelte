@@ -35,11 +35,10 @@
 
 	const intervalId = setInterval(() => {
 	  randomNumber = Math.floor(Math.random() * quotes.length);
-	  console.log("Random number: " + randomNumber);
 	}, 7000);	
 </script>
 
-<div class="w-screen h-screen flex flex-col space-y-10 items-center justify-center" style="background-image: url('/{quotes[randomNumber][1]}.png')">
+<div class="w-screen h-screen flex flex-col space-y-10 text-center items-center justify-center px-5" style="background-image: url('/{quotes[randomNumber][1]}.png')">
 	<h1 class="text-2xl font-bold text-white">Já dizia o Jorge...</h1>
 	<p class="text-3xl font-bold text-white italic">"{quotes[randomNumber][0]}"</p>
 </div>
